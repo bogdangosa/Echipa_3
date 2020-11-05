@@ -10,16 +10,16 @@ public class Maria_Alexia_HarwareMap {
     public DcMotor left = null;
     public Servo brat = null;
 
-    HardwareMap Maria_Alexia_HardwareMap = null;
+    HardwareMap Maria_Alexia_HarwareMap = null;
 
     public void init (HardwareMap ahwMap)
     {
-        Maria_Alexia_HardwareMap = ahwMap;
+        Maria_Alexia_HarwareMap = ahwMap;
 
-        right = Maria_Alexia_HardwareMap.get(DcMotor.class,"right");
-        left = Maria_Alexia_HardwareMap.get(DcMotor.class,"left");
+        right = Maria_Alexia_HarwareMap.get(DcMotor.class,"right");
+        left = Maria_Alexia_HarwareMap.get(DcMotor.class,"left");
 
-        brat = Maria_Alexia_HardwareMap.get(Servo.class,"brat");
+        brat = Maria_Alexia_HarwareMap.get(Servo.class,"brat");
 
         right.setDirection(DcMotor.Direction.REVERSE);
         left.setDirection(DcMotor.Direction.FORWARD);
@@ -28,7 +28,7 @@ public class Maria_Alexia_HarwareMap {
         left.setPower(0);
 
         brat.setPosition(0);
-        
+
 
 
     }
