@@ -11,16 +11,20 @@ public class NataliaBarz_hardwaremap2 {
 
     public Servo brat = null;
 
-    NataliaBarz_hardwaremap2 = null;
-    public void init {HardwareMap ahwMap}
+   HardwareMap NataliaBarz_hardwaremap2 = null;
+    public void init (HardwareMap ahwMap)
     {
         HardwareMap = ahwMap;
-        right = NataliaBarz_hardwaremap2.get(DcMotor.class, deviceName"right");
-        left = NataliaBarz_hardwaremap2.get(DcMotor.class, deviceName"left");
+        right = NataliaBarz_hardwaremap2.get(DcMotor.class, "right");
+        left = NataliaBarz_hardwaremap2.get(DcMotor.class, "left");
 
-                brat = NataliaBarz_hardwaremap2.get(DcMotor.class, device"brat");
+                brat = NataliaBarz_hardwaremap2.get(Servo.class, "brat");
                         right.setDirection(DcMotor.Direction.REVERSE);
                         left.setDirection(DcMotor.Direction.FORWARD);
+                        right.setPower(0);
+                        left.setPower(0);
+
+                        brat.setPosition(0);
     }
 
 
