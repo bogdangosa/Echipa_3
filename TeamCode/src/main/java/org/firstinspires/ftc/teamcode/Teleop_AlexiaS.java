@@ -5,9 +5,10 @@ import com.qualcomm.robotcore.eventloop.opmode.OpMode;
 import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
 import com.qualcomm.robotcore.hardware.HardwareMap;
 
-@TeleOp(name="TeleOp_AlexiaS", group="Iterative OpMode")
+@TeleOp(name="TeleOp_AlexiaS", group = "Iterative OpMode")
 public class Teleop_AlexiaS extends OpMode {
-    Teleop_AlexiaS Robotel = new Teleop_AlexiaS();
+
+    Maria_Alexia_HarwareMap Robotel = new Maria_Alexia_HarwareMap();
 
     @Override
     public void init()
