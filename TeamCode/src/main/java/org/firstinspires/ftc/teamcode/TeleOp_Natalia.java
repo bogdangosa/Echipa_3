@@ -2,12 +2,11 @@ package org.firstinspires.ftc.teamcode;
 
 import com.qualcomm.robotcore.eventloop.opmode.OpMode;
 import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
-import com.qualcomm.robotcore.hardware.HardwareMap;
 
 @TeleOp (name="TeleOp_Natalia", group = "Iterative OpMode")
 public class TeleOp_Natalia extends OpMode {
 
-    NataliaBarz_hardwaremap2 robot = new NataliaBarz_hardwaremap2();
+    NataliaBarz_hardwaremap robot = new NataliaBarz_hardwaremap();
 
     @Override
     public void init()

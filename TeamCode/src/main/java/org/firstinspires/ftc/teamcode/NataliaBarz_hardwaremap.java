@@ -5,7 +5,7 @@ import com.qualcomm.robotcore.hardware.DcMotorSimple;
 import com.qualcomm.robotcore.hardware.HardwareMap;
 import com.qualcomm.robotcore.hardware.Servo;
 
-public class NataliaBarz_hardwaremap2 {
+public class NataliaBarz_hardwaremap {
     public DcMotor right = null;
     public DcMotor left = null;
 
