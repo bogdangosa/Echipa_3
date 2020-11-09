@@ -6,8 +6,8 @@ import com.qualcomm.robotcore.hardware.DcMotorSimple;
 import com.qualcomm.robotcore.hardware.HardwareMap;
 
 public class MariaHardwaremap {
-    public DcMotor motor1;
-    public DcMotor motor2;
+    public DcMotor motor1=null;
+    public DcMotor motor2=null;
     private HardwareMap MariaHardwaremap;
     public void init () {
         motor1=MariaHardwaremap.get(DcMotor.class,"Maria1");
